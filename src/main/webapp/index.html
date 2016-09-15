@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculater</title>
+        <h3> 
+          Vani P 
+       </h3>
+</head>
+<body>
+ <form>
+      Enter number-1: <input type="number" id="num1">
+      Enter number-2: <input type="number" id="num2">
+       <input type="button" value="ADD" onclick="add();">
+   <input type="button" value="MUL" onclick="mul();">
+   <input type="button" value="DIV" onclick="div();">
+   
+  </form>
+
+  <p id="result">    
+  </p>
+     <script>
+      function add(){
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 + +n2;
+        
+      alert("the sum is: "+sum);
+      document.getElementById("result").innerText=sum;}
+      
+      function mul(){
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var mul=+n1 * +n2;  
+      alert("the mul is: "+mul);
+      document.getElementById("result").innerText=mul;
+       }
+       
+      function div(){
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var div=+n1 / +n2;  
+      alert("the div is: "+div);
+      document.getElementById("result").innerText=div;
+       }
+</script>
+  
+</body>
+</html>
